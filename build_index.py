@@ -85,7 +85,7 @@ def _build(idx: "Index", quiet: bool, show_progress: bool):
             if progress_bar is not None:
                 progress_bar.progress(progress, text=f"({i} / {len(files)})")
 
-        with open(f"{OCR_RESULTS_DIR}/{f}") as fd:
+        with open(f"{OCR_RESULTS_DIR}/{f}", encoding='utf-8') as fd:
             j = json.load(fd)
 
         chars = []
