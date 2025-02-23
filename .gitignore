@@ -132,7 +132,7 @@ dmypy.json
 temp
 
 # index dir
-index
+#index
 
 # pdf files
 pdf_files
